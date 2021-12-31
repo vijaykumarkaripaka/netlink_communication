@@ -1,0 +1,14 @@
+static void nlmsg_dump(struct nlmsghdr *nlh)
+{
+
+printk(KERN_INFO "Hdr length is %d\n", nlh -> nlmsg_len);
+
+printk(KERN_INFO "Hdr type is %i\n", nlh -> nlmsg_type);
+
+printk(KERN_INFO "Hdr flag is %i\n", nlh -> nlmsg_flags);
+
+printk(KERN_INFO "Hdr seq is %d\n", nlh -> nlmsg_seq);
+
+printk(KERN_INFO "Hdr pid is %d\n", nlh -> nlmsg_pid);
+
+}
